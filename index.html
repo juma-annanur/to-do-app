@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современный ToDo-список</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Мой ToDo-список</h1>
+            <p class="subtitle">Добавляйте задачи и организуйте свой день</p>
+        </header>
+        
+        <div class="input-area">
+            <input 
+                type="text" 
+                class="task-input" 
+                placeholder="Напишите новую задачу..."
+                id="taskInput"
+            >
+            <button class="add-btn" id="addBtn">Добавить</button>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="active">Активные</button>
+            <button class="filter-btn" data-filter="completed">Выполненные</button>
+        </div>
+        
+        <ul class="task-list" id="taskList">
+            <!-- Задачи добавляться сюда -->
+        </ul>
+        
+        <div class="stats">
+            <span id="taskCount">0 задач осталось</span>
+            <button class="clear-btn" id="clearCompleted">Очистить выполненные</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
